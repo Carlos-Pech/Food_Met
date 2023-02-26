@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_met/widgets/AppBar.dart';
-import 'package:food_met/widgets/widget_products.dart';
+import 'package:food_met/widgets/widget_product.dart';
 
 class ListsProductPage extends StatelessWidget {
   const ListsProductPage({super.key});

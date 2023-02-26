@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_met/widgets/widget_products.dart';
+import 'package:food_met/widgets/widget_product.dart';
 
 class EntradasPage extends StatelessWidget {
   const EntradasPage({super.key});
