@@ -5,7 +5,7 @@ import 'package:food_met/Dtos/Models/product_response_dto.dart';
 import 'package:food_met/Dtos/services/remote_services.dart';
 // import 'package:food_met/Dtos/services/remote_services.dart';
 
-import '../../pages/index.dart';
+import '../../Screens/index.dart';
 
 // import 'package:logger/logger.dart';
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:food_met/pages/404_page.dart';
-import 'package:food_met/pages/entradas_page.dart';
-import 'package:food_met/pages/home_page.dart';
-import 'package:food_met/pages/Lists_Product_Page_.dart';
-import 'package:food_met/pages/splash.dart';
+import 'package:food_met/Screens/404_page.dart';
+import 'package:food_met/Screens/entradas_page.dart';
+import 'package:food_met/Screens/home_page.dart';
+import 'package:food_met/Screens/Lists_Product_Page_.dart';
+import 'package:food_met/Screens/splash.dart';
 import 'package:food_met/widgets/widget_products.dart';
 import 'package:provider/provider.dart';
 
