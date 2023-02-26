@@ -1,4 +1,5 @@
-import 'package:badges/badges.dart';
+//how create a dive?
+
 import 'package:flutter/material.dart';
 
 class HomeAppBar extends StatelessWidget {
@@ -6,13 +7,13 @@ class HomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        Color miColor = Color(0xFF9CCC65);
+    Color miColor = Color(0xFF9CCC65);
     return Container(
       color: Colors.white,
       padding: EdgeInsets.all(25),
       child: Row(
-        children: [
-          const Padding(
+        children: const [
+          Padding(
             padding: EdgeInsets.only(
               left: 20,
             ),
@@ -25,19 +26,6 @@ class HomeAppBar extends StatelessWidget {
             ),
           ),
           Spacer(),
-          Badge(
-            badgeContent: Text(
-              "2",
-              style: TextStyle(color: Colors.white),
-            ),
-            child: InkWell(
-              onTap: () {},
-              child: Icon(
-                Icons.calculate_outlined,
-                size: 30,
-              ),
-            ),
-          ),
         ],
       ),
     );

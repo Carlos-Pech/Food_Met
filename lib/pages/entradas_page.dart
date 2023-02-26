@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_met/widgets/widget_products.dart';
 
 class EntradasPage extends StatelessWidget {
   const EntradasPage({super.key});
@@ -6,10 +7,24 @@ class EntradasPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(239, 245, 237, 237),
+      // backgroundColor: Color.fromARGB(239, 245, 237, 237),
       appBar: AppBar(
-        title: const Text("Entradas"),
-        backgroundColor: Colors.black,
+        title: const Text(
+          "Entradas",
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.black,
+          ),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
+        // title: const Text('My App'),
+
       ),
       body: SafeArea(
           child: Padding(
@@ -33,14 +48,14 @@ class EntradasPage extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [],
+                      children: const [],
                     ),
                     InkWell(
                       onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => const ItemsS()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ItemsS()));
                         // Navigator.pushNamed(context, '/items');
                       },
                       child: Container(
@@ -68,7 +83,7 @@ class EntradasPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 1),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Spacer(),
                           // Icon(Icons.calculate),
                         ],
@@ -78,8 +93,8 @@ class EntradasPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 15, right: 10, top: 8),
-                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                padding: const EdgeInsets.only(left: 15, right: 10, top: 8),
+                margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
@@ -88,7 +103,7 @@ class EntradasPage extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [],
+                      children: const [],
                     ),
                     InkWell(
                       onTap: () {
@@ -122,7 +137,7 @@ class EntradasPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 1),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Spacer(),
                           // Icon(Icons.calculate),
                         ],
@@ -175,7 +190,7 @@ class EntradasPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 1),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Spacer(),
                           // Icon(Icons.calculate),
                         ],
@@ -185,8 +200,8 @@ class EntradasPage extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.only(left: 15, right: 10, top: 8),
-                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 10),
+                padding: const EdgeInsets.only(left: 15, right: 10, top: 8),
+                margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 10),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
@@ -195,7 +210,7 @@ class EntradasPage extends StatelessWidget {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [],
+                      children: const [],
                     ),
                     InkWell(
                       onTap: () {
@@ -229,7 +244,7 @@ class EntradasPage extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(vertical: 1),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
+                        children: const [
                           Spacer(),
                           // Icon(Icons.calculate),
                         ],

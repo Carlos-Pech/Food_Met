@@ -18,26 +18,26 @@ class Search_Section extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            margin: EdgeInsets.symmetric(horizontal: 15),
-            padding: EdgeInsets.symmetric(horizontal: 15),
+            margin: const EdgeInsets.symmetric(horizontal: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 15),
             height: 50,
             decoration: BoxDecoration(
-              color: Color(0xFFEEEEEE),
+              color: const Color(0xFFEEEEEE),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(left: 5),
+                  margin:const EdgeInsets.only(left: 5),
                   height: 50,
                   width: 300,
                   child: TextFormField(
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         border: InputBorder.none, hintText: "Search here"),
                   ),
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.search,
                   size: 27,
                 )

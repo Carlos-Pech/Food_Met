@@ -9,7 +9,7 @@ class HomePage1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const Color miColor = Color(0xFF9C634E);
+    // const Color miColor = Color(0xFF9C634E);
     return Scaffold(
       backgroundColor: Colors.white,
       body: ListView(
@@ -18,7 +18,7 @@ class HomePage1 extends StatelessWidget {
           const Search_Section(),
           CarrouselSection(),
           // const ItemsS(),
-          const Categories()
+          const Categories(),
         ],
       ),
     );
