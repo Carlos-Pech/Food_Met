@@ -11,7 +11,7 @@ class ListsProductPage extends StatelessWidget {
       body: ListView(
         children: const [
           CustomAppBar(),
-          ItemsS(),
+          // ItemsS(),
           // (const) ItemsS ItemsS({Key? key, required Products products})
           
         ],

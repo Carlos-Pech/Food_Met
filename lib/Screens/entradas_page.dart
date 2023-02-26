@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_met/widgets/widget_product.dart';
+import 'package:food_met/widgets/widgets_dips/widget_canapes.dart';
 
 class EntradasPage extends StatelessWidget {
   const EntradasPage({super.key});
@@ -24,7 +25,6 @@ class EntradasPage extends StatelessWidget {
           },
         ),
         // title: const Text('My App'),
-
       ),
       body: SafeArea(
           child: Padding(
@@ -55,7 +55,7 @@ class EntradasPage extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const ItemsS()));
+                                builder: (context) => const Products()));
                         // Navigator.pushNamed(context, '/items');
                       },
                       child: Container(
@@ -107,10 +107,10 @@ class EntradasPage extends StatelessWidget {
                     ),
                     InkWell(
                       onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => const ItemsS()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Canapes()));
                       },
                       child: Container(
                         width: double.infinity,

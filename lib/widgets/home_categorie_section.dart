@@ -29,7 +29,7 @@ class Categories extends StatelessWidget {
                 ),
               ],
             ),
-            child:InkWell(
+            child: InkWell(
               onTap: () {
                 Navigator.pushNamed(context, '/entradas');
               },

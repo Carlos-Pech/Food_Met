@@ -4,8 +4,8 @@ import '../widgets/home_carrousel_section.dart';
 import '../widgets/home_categorie_section.dart';
 import '../widgets/home_search_widget.dart';
 
-class HomePage1 extends StatelessWidget {
-  const HomePage1({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

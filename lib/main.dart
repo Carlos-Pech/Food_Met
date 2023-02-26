@@ -7,6 +7,7 @@ import 'package:food_met/Screens/splash.dart';
 import 'package:food_met/widgets/widget_product.dart';
 import 'package:provider/provider.dart';
 
+import 'Dtos/providers/canapes_provider.dart';
 import 'Dtos/providers/product_providers.dart';
 
 void main() => runApp(const MyApp());
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ProductProvider()),
+        ChangeNotifierProvider(create: (context) => CanapesProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -28,9 +30,9 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => SplashScreen(),
-          '/home': (context) => const HomePage1(),
+          '/home': (context) => const HomePage(),
           '/entradas': (context) => const EntradasPage(),
-          '/items': (context) => const ItemsS(),
+          '/items': (context) => const Products(),
           '/products': (context) => const ListsProductPage(),
         },
         onGenerateRoute: (settings) {

@@ -9,23 +9,22 @@ import '../../Screens/index.dart';
 
 // import 'package:logger/logger.dart';
 
-class ProductProvider extends ChangeNotifier {
+class CanapesProvider extends ChangeNotifier {
   bool isLoading = false;
   List<Products> products = [];
 
-  ProductProvider() {
+  CanapesProvider() {
     fetchProducts();
-    // fetchProductsCanapes();
   }
 
   Future<void> fetchProducts() async {
     isLoading = true;
     notifyListeners();
-    products = await RemoteServices.fetchProducts();
+    products = await RemoteServices.fetchProductsCanapes();
     debugPrint('Total products: ${products.length}');
     isLoading = false;
     notifyListeners();
   }
 
-
+  
 }

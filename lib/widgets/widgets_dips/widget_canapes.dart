@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:food_met/Dtos/providers/canapes_provider.dart';
 import 'package:provider/provider.dart';
 
-import '../Dtos/providers/product_providers.dart';
-
-class Products extends StatelessWidget {
+class Canapes extends StatelessWidget {
   // final Products products;
-  const Products({super.key});
+  const Canapes({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final controller = Provider.of<ProductProvider>(context);
+    final controller = Provider.of<CanapesProvider>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -33,7 +32,7 @@ class Products extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Consumer<ProductProvider>(
+          Consumer<CanapesProvider>(
             builder: (context, usersProvider, child) => usersProvider.isLoading
                 ? const Center(
                     child: CircularProgressIndicator(),
@@ -55,6 +54,7 @@ class Products extends StatelessWidget {
                           return Container(
                             margin: const EdgeInsets.symmetric(
                                 vertical: 8, horizontal: 10),
+                                
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(10.0),

@@ -7,9 +7,8 @@ import '../../Screens/index.dart';
 import 'api_url.dart';
 
 class RemoteServices {
-  static Future<List<Products>> fetchProducts() async {
-    var endpoint = "api/product/";
-    var response = await http.get(Uri.parse(baseUrl + endpoint));
+  static Future<List<Products>> fetchData(String url, {Map<String, String>? queryParams}) async {
+    var response = await http.get(Uri.parse(url));
     if (response.statusCode == 200) {
       dynamic responseData = json.decode(response.body);
       if (responseData is Map<String, dynamic>) {
@@ -30,4 +29,19 @@ class RemoteServices {
       throw Exception('Failed to load products');
     }
   }
+
+  static Future<List<Products>> fetchProducts() async {
+    var endpoint = ApiEndpoints.products;
+    return fetchData(baseUrl + endpoint);
+  }
+
+  static Future<List<Products>> fetchProductsCanapes() async {
+    var endpoint = ApiEndpoints.productsCanapes;
+    return fetchData(baseUrl + endpoint);
+  }
+}
+
+class ApiEndpoints {
+  static const products = 'api/product/';
+  static const productsCanapes = 'api/product/';
 }
