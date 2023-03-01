@@ -6,6 +6,7 @@ import 'package:food_met/pages/Lists_Product_Page_.dart';
 import 'package:food_met/pages/splash.dart';
 import 'package:food_met/widgets/widget_products.dart';
 import 'package:provider/provider.dart';
+import 'package:food_met/pages/resultados_b.dart';
 
 import 'Dtos/providers/product_providers.dart';
 
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
           '/entradas': (context) => const EntradasPage(),
           '/items': (context) => const ItemsS(),
           '/products': (context) => const ListsProductPage(),
+          '/resultados': (context) =>  Resultados_b(),
         },
         onGenerateRoute: (settings) {
           return MaterialPageRoute(
