@@ -124,7 +124,7 @@ class Categories extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const[],
+                children: const [],
               ),
               InkWell(
                 onTap: () {
@@ -137,7 +137,7 @@ class Categories extends StatelessWidget {
                 child: Container(
                   margin: const EdgeInsets.all(10),
                   child: Image.asset(
-                    "assets/images/bebida10.png",
+                    "assets/icons/cal.png",
                     height: 100,
                     width: 150,
                   ),
@@ -147,7 +147,7 @@ class Categories extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 20),
                 alignment: Alignment.topCenter,
                 child: const Text(
-                  "Bebidas",
+                  "Calorias",
                   style: TextStyle(
                     fontSize: 20,
                     color: Colors.black,
@@ -159,7 +159,7 @@ class Categories extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const[Spacer()],
+                  children: const [Spacer()],
                 ),
               )
             ],
@@ -176,7 +176,7 @@ class Categories extends StatelessWidget {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:const [],
+                children: const [],
               ),
               InkWell(
                 onTap: () {

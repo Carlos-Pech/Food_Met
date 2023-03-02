@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_met/Dtos/providers/proveedor_platillos.dart';
 import 'package:food_met/pages/404_page.dart';
 import 'package:food_met/pages/entradas_page.dart';
 import 'package:food_met/pages/home_page.dart';
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ProductProvider()),
+        ChangeNotifierProvider(create: (contexto) => PlatilloProvider()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
           '/entradas': (context) => const EntradasPage(),
           '/items': (context) => const ItemsS(),
           '/products': (context) => const ListsProductPage(),
-          '/resultados': (context) =>  Resultados_b(),
+          '/resultados': (contexto) =>  Sumatoria(),
         },
         onGenerateRoute: (settings) {
           return MaterialPageRoute(

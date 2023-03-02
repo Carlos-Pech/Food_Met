@@ -1,3 +1,12 @@
+import 'dart:convert';
+
+Platillo platilloFromJson(String str) => Platillo.fromJson(json.decode(str));
+
+String platilloToJson(Platillo data) => json.encode(data.toJson());
+
+
+
+
 class Platillo {
   Id? iId;
   String? name;
@@ -29,7 +38,6 @@ class Platillo {
       this.time});
 
   Platillo.fromJson(Map<String, dynamic> json) {
-    iId = json['_id'] != null ? new Id.fromJson(json['_id']) : null;
     name = json['name'];
     description = json['description'];
     price = json['price'];
